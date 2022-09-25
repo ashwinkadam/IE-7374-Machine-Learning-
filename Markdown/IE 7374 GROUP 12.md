@@ -13,8 +13,8 @@
 ##
 
 ### **Content**
-- [Problem Statement](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/edit/main/Markdown/IE%207374%20GROUP%2012.md#problem-statement)
-- [Project Goal](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/edit/main/Markdown/IE%207374%20GROUP%2012.md#project-goal)
+- [Problem Statement](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#problem-statement)
+- [Project Goal](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#project-goal)
 - [Data Description](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#data-description)
 - [Data Exploration](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#data-exploration)
 - [Feature selection and Statistical Test](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#feature-selection-and-statistical-test)
