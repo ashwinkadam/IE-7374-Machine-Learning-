@@ -1,6 +1,6 @@
 # Classification: Online News Popularity
 
-![name](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/NEU_LOGO.png)
+![name](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/NEU_LOGO.png?raw=true)
 ##
 
 ### **Team Members**
@@ -13,17 +13,19 @@
 ##
 
 ### **Content**
-- [Problem Statement](#Problem_Statement)
-- [Project Goal](#Project_Goal)
-- [Data Description](#Data_Description)
-- [Data Exploration](#Data_Exploration)
-- [Feature selection and Statistical Test](#Feature_selection_and_Statistical_Test)
-- [Principal Component Analysis](#Principal_Component_Analysis)
-- [Model Exploration](#Model_Exploration)
-- [Logistic Regression](#Logistic_Regression)
-- [SVM](#SVM)
-- [K- Means Clustering](#K_-_Means_Clustering)
-- [Project Outcome](#Project_Outcome)
+- [Problem Statement](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/edit/main/Markdown/IE%207374%20GROUP%2012.md#problem-statement)
+- [Project Goal](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/edit/main/Markdown/IE%207374%20GROUP%2012.md#project-goal)
+- [Data Description](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#data-description)
+- [Data Exploration](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#data-exploration)
+- [Feature selection and Statistical Test](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#feature-selection-and-statistical-test)
+- [Principal Component Analysis](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#principal-component-analysis)
+- [Model Exploration](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#model-exploration)
+- [Logistic Regression](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#logistic-regression)
+- [Naïve Bayes](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#na%C3%AFve-bayes)
+- [SVM](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#svm)
+- [K- Means Clustering](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#k--means-clustering)
+- [Neural Networks](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#neural-networks)
+- [Project Outcome](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/IE%207374%20GROUP%2012.md#project-outcome)
 
 ##
 
@@ -41,39 +43,39 @@ The original data contains 61 features including URL, rate of positive words, ti
 #### **Data Exploration**
 In data exploration, we are charting out histograms of all the features, to check the distribution of data. Also, we are plotting the boxplots of all the features, to check the outliers in the data. The data has been checked for null values and we haven’t found any NULL values in the data. The following figure represents a heatmap where NULL values are highlighted as we can’t see any highlighted cell, we confirm that there is no presence of NULL values in the dataset.
 
-![NUll Check](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/NULL.png)<br />
+![NUll Check](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/NULL.png?raw=true)<br />
 
 We can see in the fig 1 and fig 2 we have distribution close to a normal distribution which is desirable for our analysis. also in fig 3, we can see that feature **num_keyword** have a single outlier which suggests that the distribution of data is uniform, and we have less data points which lie at an abnormal distance from other data points.In this analysis we will keep the features having a distribution closer to normal distribution and with minimum number of outliers.
 
 ###### *Figure 1: n_tokens_title*
-![Figure 1: n_tokens_title](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/n_tokens.png)
+![Figure 1: n_tokens_title](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/n_tokens.png?raw=true)
 
 ###### *Figure 2: n_unique_tokens*
-![Figure 2: n_unique_tokens](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/n_unique_tokens.png)
+![Figure 2: n_unique_tokens](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/n_unique_tokens.png?raw=true)
 
 ###### *Figure 3: num_keywords*
-![Figure 3: num_keywords](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/num_keywords.png)
+![Figure 3: num_keywords](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/num_keywords.png?raw=true)
 
 In second set of figures, we can see that for feature – **num_videos**, we have highly left skewed data that is 95% of data is falling in the range 0-5, which gives us very low variance. Also, fig 4 box plot for the same feature confirms the same and we see that there many outliers as well in this feature.
 
 ###### *Figure 4: num_videos*
-![Figure 4: num_videos](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/num_videos_box.png)
+![Figure 4: num_videos](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/num_videos_box.png?raw=true)
 
 ###### *Figure 5: num_videos*
-![Figure 5: num_keywords](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/num_videos_hist.png)<br />
+![Figure 5: num_keywords](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/num_videos_hist.png?raw=true)<br />
 
 
 For the fig 6, we can see that this feature is highly left skewed with near 0 variance. Based on these facts , we decide to drop these features from our analysis, as these are highly left or right skewed data with very low variance or having large number of outliers.we can say that we have the distribution of the data between 0 and 1 which suggest that feature has only two discrete values (0,1).<br />
 
 ###### *Figure 6: weekday_is_monday*
-![Figure 6: weekday_is_monday](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/weekday_is_monday.png)
+![Figure 6: weekday_is_monday](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/weekday_is_monday.png?raw=true)
 
 ###### *Figure 7: data_channel_is_world*
-![Figure 7: data_channel_is_world](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/data_channel_is_world.png)<br />
+![Figure 7: data_channel_is_world](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/data_channel_is_world.png?raw=true)<br />
 
 Similarly, below are the list of discrete binary features.<br />
 These all featured will be exempted from normalization of data and outlier treatment.
-![table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/feature_table.png)<br />
+![table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/feature_table.png?raw=true)<br />
 
 
 ##### Co-relation plot
@@ -81,15 +83,15 @@ These all featured will be exempted from normalization of data and outlier treat
  that are very highly correlated. we could run into the multicollinearity conundrum.
 
  ###### *Figure 8: Co-relation plot:*
-![Figure 8: Co-relation plot:](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/corr_plot.png)
+![Figure 8: Co-relation plot:](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/corr_plot.png?raw=true)
 
 So in the above fig, we have calculated and plotted the covariance matrix, highlighted features represent the correlation coefficient which is greater than 0.7. We will be dropping all the highlighted features as these are highly correlated.
-![table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/corr_table.png)
+![table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/corr_table.png?raw=true)
 ##
 
 #### **Feature selection and Statistical Test**
 Based on the study of distribution and outliers in the feature in combination with the correlation matrix we will be dropping the following set of features from our analysis.
-![table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/drop_feature.png)
+![table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/drop_feature.png?raw=true)
 
 Total number of features dropped after EDA:- 25<br />
 Features remaining :- 36
@@ -172,7 +174,7 @@ explore various Models. We have implemented the below models to understand the a
 * Neural Networks
 
 Above explored models have tested on the following datasets.
-![table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/data_sep.png)
+![table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/data_sep.png?raw=true)
 
 ##
 
@@ -181,10 +183,10 @@ Above explored models have tested on the following datasets.
 Logistic Regression is simple and intuitive algorithm which is easy to implement. In Logistic Regression the response variable needs to be binary, and data should be free from missing values and outliers. The logistic function is a sigmoid function, which takes any real input, and outputs a value between zero and one.We make use of grid search for hyper-parameter tuning.<br />
 
 The logistic function is of the form:
-![function](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/log_funct.png)
+![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/log_funct.png?raw=true)
 
 Accuracy
-![table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/log_acc.png)
+![table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/log_acc.png?raw=true)
 ##
 
 #### **Naïve Bayes**
@@ -194,26 +196,26 @@ We have Implemented the below Naïve Bayes algorithm.
 * **Gaussian naive Bayes** <br />
 When dealing with continuous data, a typical assumption is that the continuous values associated with each class are distributed according to a normal (or Gaussian) distribution.
 We will be using the Gaussian naive Bayes model for training the continuous features of data and later we will multiply the probability of classes with the probability of Bernoulli naive Bayes which will be training on the discrete features of the dataset. We can multiply the probabilities with each other since each feature is independent.<br />
-![function](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/GNB.png)
+![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/GNB.png?raw=true)
 
 * **Bernoulli naive Bayes** <br />
   In the multivariate Bernoulli event model, features are independent Booleans (binary variables) describing inputs. where binary term occurrence features are used rather than term frequencies.
-  ![function](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/GB.png) <br />
+  ![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/GB.png?raw=true) <br />
 
-![Table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/NB_acc.png)
+![Table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/NB_acc.png?raw=true)
 
 ##
 
 #### **SVM**
 A support vector machine (SVM) is a machine learning algorithm that analyzes data for classification and regression analysis. SVM is a supervised learning method that looks at data and sorts it into one of two categories. An SVM outputs a map of the sorted data with the margins between the two as far apart as possible while keeping the distance between the data point and the margin minimum. Here, we used Soft Margin SVM. A soft-margin SVM modifies the constraints from the hard-margin SVM by allowing some points to violate the margin. It introduces slack variables ξi, one for each training point, into the constraints.
 
-![function](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/SVM_1.png)<br />
+![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/SVM_1.png?raw=true)<br />
 
 Putting the objective and constraints together, the soft-margin SVM optimization problem is:
 
-![function](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/SVM_2.png) <br />
+![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/SVM_2.png?raw=true) <br />
 
-![Table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/SVM_acc.png)
+![Table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/SVM_acc.png?raw=true)
 
 ##
 
@@ -232,7 +234,7 @@ c) Finally, compute the centroids for the clusters by averaging all the cluster�
 points.
 
 
-![Table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/K_acc.png)
+![Table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/K_acc.png?raw=true)
 ##
 
 #### **Neural Networks**
@@ -240,7 +242,7 @@ We have built our NN model using Keras. <br />
 Model in keras is defined as a sequence of layers and we can add layers until we achieve the desired model. When creating the first layer in keras we need to specify input layer the correct number of input features by passing the number of features in “input_shape” which in our analysis is 35 features (35,)
 While the optimum exact number of layers and number of nodes are found through a process of trial-and-error experimentation we will initially proceed with 5 dense connected layers with an activation function as ReLU and Sigmoid Function for the output layer as we have a binary outcome variable.
 
-![Table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/N_acc.png)
+![Table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/N_acc.png?raw=true)
 
 ##
 
@@ -249,7 +251,7 @@ With the implementation of Multiple models we realised that Logistic Regression 
 With respect to computation timing of each model we see that naïve bayes took less time to run(4.15 sec) and accuracy of 66.41%, which is close to Logistic Regression model.<br />
 
 Model behave differently when we subjected to different number of features and in presence of outlier. Below tables gives a summary of it.
-![Table](https://raw.githubusercontent.com/ashwinkadam/IE-7374-Machine-Learning-/main/Images/po.png) 
+![Table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/po.png?raw=true) 
 With respect to target variable, that is number of shares. We found out that the articles that we published on weekends are more likely to be shared. Also, by doing deep diving into other features we found out that articles that are related to entertainment and positive sentiment are more likely to share.
 
 
