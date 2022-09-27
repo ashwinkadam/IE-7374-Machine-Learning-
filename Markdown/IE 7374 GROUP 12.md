@@ -199,8 +199,8 @@ We will be using the Gaussian naive Bayes model for training the continuous feat
 ![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/GNB.png?raw=true)
 
 * **Bernoulli naive Bayes** <br />
-  In the multivariate Bernoulli event model, features are independent Booleans (binary variables) describing inputs. where binary term occurrence features are used rather than term frequencies.
-  ![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/GB.png?raw=true) <br />
+  In the multivariate Bernoulli event model, features are independent Booleans (binary variables) describing inputs. where binary term occurrence features are used rather than term frequencies.<br />
+![function](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/GB.png?raw=true) <br />
 
 ![Table](https://github.com/ashwinkadam/IE-7374-Machine-Learning-/blob/main/Markdown/Images/NB_acc.png?raw=true)
 
